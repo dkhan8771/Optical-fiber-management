@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="side-nav" [ngClass]="{'side-nav-close': isToggle}" [style.background-color]="themeColor">
+    <div class="logo">
+      <img src="assets/images/logo.jpeg" alt="" width="90">
+    </div>
+    <div class="side-nav-items">
+      <app-side-navigation></app-side-navigation>
+    </div>
+  </div>
+  <div class="container-right" [ngClass]="{'container-right-full': isToggle}">
+    <div class="top-nav" [style.background-color]="themeColor">
+      <app-top-navigation (toggleNav)="sidenavToggle($event)"></app-top-navigation>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- <div class="bottom-nav" [style.background-color]="themeColor">
+      <div style="margin: auto;">
+        <p>Content Left</p>
+      </div>
+      <p-divider layout="vertical"></p-divider>
+      <div style="margin: auto;">
+        <p>Content right</p>
+      </div>
+    </div> -->
+  </div>
+</div>
+<p-toast></p-toast>

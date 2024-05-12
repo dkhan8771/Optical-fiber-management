@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+
+:host ::ng-deep .p-menubar {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  // background: transparent !important;
+  color: #fff;
+  border: none;
+  // background-color: $background-light;
+  background: transparent;
+}
+
+// :host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-submenu-icon {
+//   color: #ffffff;
+//   margin-left: 0.5rem;
+// }
+
+// :host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+//   color: #ffffff;
+// }
+::ng-deep .p-menubar .p-menuitem-link {
+  border-radius: 6px !important;
+}
+
+::ng-deep .p-menubar .p-menuitem-link .logout-color {
+  color: #c72b26;
+}
+
+.flex-d {
+  display: flex;
+}

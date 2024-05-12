@@ -1,0 +1,28 @@
+<div class="main-container">
+  <form action="#">
+    <div class="login-card" [formGroup]="loginForm">
+      <p-card>
+      <ng-template pTemplate="header">
+        <div class="pt-4 text-center card-label">User Login</div>
+      </ng-template>
+      <div class="login-inputs">
+        <p-dropdown [options]="userList" formControlName="userName" placeholder="Select a User" [editable]="false"
+        optionLabel="userName"></p-dropdown>
+        <div class="error-message ng-invalid ng-dirty"
+          *ngIf="this.loginForm.controls['userName'].touched && this.loginForm.value.userName === ''">Please select User
+        </div>
+        
+        <p-password [toggleMask]="true" placeholder="Password" formControlName="password"></p-password>
+        <div class="error-message ng-invalid ng-dirty"
+          *ngIf="this.loginForm.controls['password'].touched && this.loginForm.value.password === ''">Please enter
+          Password</div>
+        <div class="error-message mt-3 ng-invalid ng-dirty" *ngIf="invalidLogin">Invalid Username or Password!</div>
+      </div>
+      <!-- <p-divider></p-divider> -->
+      <div class="login-btn mt-5">
+        <p-button label="Login" (click)="login()" type="submit"></p-button>
+      </div>
+    </p-card>
+  </div>
+</form>
+</div>

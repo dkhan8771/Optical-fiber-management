@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "name": "Optical_Fiber_Management_Delhi",
+  "CableType": "Yellow-OFM",
+  "Core": 6,
+  "properties": [
+    {
+      "SerialNo": 1,
+      "color": "rgb(255, 0, 0)",
+      "ip": "192.160.40.41",
+      "From": "A",
+      "to": "B",
+      "TxPower(dBm)": -7,
+      "RxPower(dBm)": -18,
+      "Wavelength(nm)": 1300
+    },
+    {
+      "SerialNo": 2,
+      "color": "rgb(0, 255, 0)",
+      "ip": "192.160.40.42",
+      "From": "A",
+      "to": "C",
+      "TxPower(dBm)": -6,
+      "RxPower(dBm)": -18,
+      "Wavelength(nm)": 1300
+    },
+    {
+      "SerialNo": 3,
+      "color": "rgb(0, 0, 255)",
+      "ip": "192.160.40.43",
+      "From": "A",
+      "to": "D",
+      "TxPower(dBm)": -5,
+      "RxPower(dBm)": -21,
+      "Wavelength(nm)": 1350
+    },
+    {
+      "SerialNo": 4,
+      "color": "rgb(255, 255, 0)",
+      "ip": "192.160.40.44",
+      "From": "A",
+      "to": "E",
+      "TxPower(dBm)": -6,
+      "RxPower(dBm)": -23,
+      "Wavelength(nm)": 1400
+    },
+    {
+      "SerialNo": 5,
+      "color": "rgb(0, 255, 255)",
+      "ip": "192.160.40.44",
+      "From": "A",
+      "to": "F",
+      "TxPower(dBm)": -4,
+      "RxPower(dBm)": -25,
+      "Wavelength(nm)": 1450
+    },
+    {
+      "SerialNo": 6,
+      "color": "rgb(255, 0, 255)",
+      "ip": "192.160.40.44",
+      "From": "A",
+      "to": "G",
+      "TxPower(dBm)": -7,
+      "RxPower(dBm)": -19,
+      "Wavelength(nm)": 1600
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!-- <div class="card"> -->
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <a role="menuitem" pripple="" class="p-ripple p-element p-menuitem-link" target="undefined" tabindex="0"
+      aria-haspopup="false" aria-expanded="false" (click)="sidenavToggle()">
+      <span class="pi pi-fw pi-bars menu-tg-color"></span>
+    </a>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <div class="flex-d">
+      <a role="menuitem" pripple="" class="p-element p-menuitem-link" target="undefined" tabindex="0"
+        aria-haspopup="false" aria-expanded="false">
+        <span class="pi pi-fw pi-user menu-tg-color" style="width: fit-content;">  {{coreService.username}}</span>
+      </a>
+      <a role="menuitem" pripple="" class="p-ripple p-element p-menuitem-link" target="undefined" tabindex="0"
+        aria-haspopup="false" aria-expanded="false" (click)="logout()">
+        <span class="p-menuitem-icon pi pi-fw pi-power-off logout-color"></span>
+        <span class="p-menuitem-text logout-color">Logout</span>
+      </a>
+    </div>
+  </ng-template>
+</p-menubar>
+<!-- </div> -->

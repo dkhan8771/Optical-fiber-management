@@ -1,0 +1,35 @@
+.color-cable {
+  height: 10px;
+  width: 70px;
+  border-radius: 13px;
+}
+
+// :host ::ng-deep .p-dialog-header {
+//   justify-content: center;
+// }
+
+::ng-deep .p-dialog .p-dialog-header {
+  border-bottom: 1px solid #e9ecef;
+  background: var(--surface-b) !important;
+  color: #212529 !important;
+  padding: 0rem;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+  background: var(--surface-b);
+  color: #212529;
+  padding: 0rem !important;
+}
+
+// ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+//   text-align: left;
+//   padding: 1rem 1rem;
+//   border: 1px solid #dee2e6;
+//   border-width: 1px 0 2px 0;
+//   font-weight: 600;
+//   color: #212529;
+//   background: var(--surface-b) !important;
+//   transition: box-shadow 0.15s;
+// }

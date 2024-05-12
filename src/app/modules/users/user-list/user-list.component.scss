@@ -1,0 +1,23 @@
+@import "../../../../styles.scss";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  row-gap: 32px;
+}
+
+::ng-deep p-inputnumber, .p-inputnumber {
+  display: initial;
+}
+
+::ng-deep label {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+::ng-deep .p-dialog-mask {
+  background: #0b0b3d4a;
+}
