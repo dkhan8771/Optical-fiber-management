@@ -1,0 +1,64 @@
+<div class="card page-view">
+  <p-table [columns]="cols" [value]="products" [tableStyle]="{ 'min-width': '50rem' }" [styleClass]="'p-datatable-sm'">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{ col.header }}
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns">
+          {{ rowData[col.field] }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+<div class="ml-4 justify-content-center p-4">
+  <p-button (click)="showDialog()" icon="pi pi-external-link" label="Add New"></p-button>
+  <p-dialog header="Sample Form" [(visible)]="visible" [style]="{width: '50vw'}">
+    <div class="grid p-5">
+      <span class="p-float-label">
+        <input pInputText id="firstName" [(ngModel)]="firstName" />
+        <label htmlFor="firstName">First Name</label>
+      </span>
+
+      <span class="p-float-label">
+        <input pInputText id="lastName" [(ngModel)]="lastName" />
+        <label htmlFor="lastName">Last Name</label>
+      </span>
+
+      <span class="p-float-label">
+        <p-inputNumber inputId="age" [(ngModel)]="age"> </p-inputNumber>
+        <label htmlFor="number-input">Age</label>
+      </span>
+
+      <p-dropdown [options]="roles" [(ngModel)]="selectedRole" optionLabel="role"></p-dropdown>
+
+      <div class="justify-content-center">
+        <div class="grid flex flex-wrap gap-3">
+          <div class="flex align-items-center">
+            <p-radioButton name="user" value="Admin" [(ngModel)]="userType" inputId="userType1"></p-radioButton>
+            <label for="userType1" class="ml-2">Admin</label>
+          </div>
+
+          <div class="flex align-items-center">
+            <p-radioButton name="user" value="User" [(ngModel)]="userType" inputId="userType2"></p-radioButton>
+            <label for="userType2" class="ml-2">User</label>
+          </div>
+        </div>
+      </div>
+      <span class="p-float-label">
+        <textarea id="float-input" rows="5" cols="30" pInputTextarea [(ngModel)]="about"></textarea>
+        <label for="float-input">About</label>
+      </span>
+    </div>
+    <ng-template pTemplate="footer">
+      <p-button label="Cancel" styleClass="p-button-secondary" (click)="visible = false"></p-button>
+      <p-button label="Save" styleClass="p-button-success" (click)="visible = false"></p-button>
+    </ng-template>
+  </p-dialog>
+</div>

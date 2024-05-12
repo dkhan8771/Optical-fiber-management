@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "name": "Delhi_OFM_Distribution",
+  "location": "Yellow Distribution",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+
+  "features": [
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "A" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.239877, 28.592725]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "B" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.23906, 28.649869]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "C" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.215562, 28.663325]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "D" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.231507, 28.704092]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "E" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.241121, 28.663641]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "F" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.263229, 28.651455]
+      }
+    },
+    {
+      "type": "Feature",
+      "networkDistribition": "yellow Distribution",
+      "icon": "assets/images/distribution-box-yellow.svg",
+      "color": "#ffff00",
+      "rotation": 90,
+      "properties": { "name": "G" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.262193, 28.600746]
+      }
+    }
+  ]
+}

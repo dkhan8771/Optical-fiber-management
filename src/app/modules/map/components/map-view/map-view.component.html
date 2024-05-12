@@ -1,0 +1,13 @@
+<div class="map-container" id="map">
+
+  <div class="search-container">
+    <p-autoComplete [suggestions]="filteredLocations" (completeMethod)="filterLocations($event)" (onSelect)="selectedOption($event)" [field]="'label'" placeholder="Search" [(ngModel)]="selectedLocation" placeholder="Search Location"></p-autoComplete>
+  </div>
+
+  <div id="popup-container" class="ol-popup">
+    <p href="#" id="popup-closer" class="ol-popup-closer"></p>
+    <p id="popup-coordinates"></p>
+  </div>
+
+  <div id="map-statusbar"></div>
+</div>

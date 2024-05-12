@@ -1,0 +1,605 @@
+.map-container {
+  position: relative;
+  top: -4.5%;
+  height: 95%;
+  .map-menu {
+    background: #b3cc58;
+    z-index: 1;
+  }
+
+  #map-toolbar {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    border: 2px solid --primary-color;
+  }
+
+  .map-toolbar-option {
+    z-index: 10;
+    position: absolute;
+    top: 6.1%;
+    right: 8px;
+    height: 45px;
+    width: 45px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid --primary-color;
+    box-shadow: 0 0.01rem 0.2rem var(--primary-color),
+      0rem -0.1rem 0.2rem var(--primary-color) inset;
+    border-radius: 5px;
+    color: black;
+  }
+
+  .map-gis-standard {
+    z-index: 10;
+    position: absolute;
+    top: 6.1%;
+    right: 112px;
+    height: 45px;
+    width: 45px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid --primary-color;
+    box-shadow: 0 0.01rem 0.2rem var(--primary-color),
+      0rem -0.1rem 0.2rem var(--primary-color) inset;
+    border-radius: 5px;
+    color: black;
+  }
+
+  .p-input-icon-left > .p-icon-wrapper.p-icon,
+  .p-input-icon-left > i:first-of-type {
+    left: 0.5rem;
+    color: --primary-color;
+    top: 0.35rem;
+  }
+
+  .custom-controls {
+    z-index: 10;
+    position: absolute;
+    top: 261px;
+    left: 0%;
+    box-sizing: border-box;
+
+    .control-button {
+      pointer-events: auto;
+      height: 45px;
+      width: 45px;
+      position: relative;
+      z-index: 10;
+      border-radius: 5px;
+      box-shadow: 0 0.02rem 0.3rem var(--primary-color),
+        0rem -0.2rem 0.3rem var(--primary-color) inset;
+      transition: box-shadow 0.1s ease-out;
+      background-color: #fff !important;
+      display: grid;
+      border: 2px solid --primary-color;
+      color: black;
+    }
+  }
+
+  .map-option-toolbar {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 16%;
+    right: 0;
+    height: 86%;
+    width: 4%;
+    background-color: --primary-color;
+    transition: 5s;
+  }
+
+  .map-search-bar {
+    z-index: 10;
+    position: absolute;
+    top: 6.3%;
+    right: 10.3%;
+    height: 6%;
+    width: 15%;
+    background-color: --primary-color;
+    transition: 5s;
+    box-shadow: 0 0.01rem 0.1rem var(--primary-color),
+      0rem -0.1rem 0.1rem var(--primary-color) inset;
+    border-radius: 5px;
+  }
+
+  .display-menu {
+    display: inline-block !important;
+    transition: 1s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 69vh;
+  }
+
+  #map-statusbar {
+    position: relative;
+    top: 105%;
+    width: 100%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 9.3%;
+    left: 85.75%;
+    transform: translateX(-50%);
+    width: 270px;
+    // height: 35px;
+    // background-color: rgba(152, 156, 204, 0.75);
+    z-index: 1;
+    border-radius: 5px;
+    // border: 1px solid #000000;
+    color: #000000;
+    box-shadow: 0 0.02rem 0.3rem var(--primary-color),
+      0rem -0.2rem 0.3rem var(--primary-color) inset;
+  }
+}
+
+:host ::ng-deep .p-autocomplete {
+  display: inline-flex;
+  position: relative;
+  // background-color: #f3f3f3;
+  width: 270px;
+  border-radius: 40px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+:host ::ng-deep .p-autocomplete-loader {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5rem;
+  color: var(--text-color);
+}
+
+:host ::ng-deep .p-autocomplete-panel {
+  // background: #f3f3f3;
+  color: var(--text-color);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+:host ::ng-deep .p-inputtext {
+  margin: 0;
+  width: 100% !important;
+  // height: 30px;
+  padding: 0.55rem 0.75rem !important;
+  // border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000000;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+:host ::ng-deep .p-autocomplete-panel .p-autocomplete-items {
+  padding: 0.5rem 0;
+  background-color: rgba(218, 219, 224, 0.85);
+}
+
+::ng-deep .p-button.p-button-icon-only.p-button-rounded {
+  border-radius: 50%;
+}
+
+.map-toolbar {
+  height: 4%;
+  border-top: 1px solid #fff;
+  .menu-item {
+    margin: 0.32rem;
+  }
+  .map-option {
+    margin: 0.32rem;
+    float: right;
+    position: absolute;
+    right: 1rem;
+    z-index: 10;
+  }
+}
+
+:host
+  ::ng-deep
+  .p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link {
+  padding: 0.15rem 0.25rem;
+  color: #495057;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::ng-deep .ol-control {
+  height: fit-content;
+  width: 21%;
+  position: relative;
+  font-size: 2px;
+}
+
+:host ::ng-deep .ol-control,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: x-large !important;
+  line-height: inherit;
+}
+
+/** ol-layerswitcher */
+::ng-deep .ol-control.ol-layerswitcher .panel-container {
+  background-color: rgba(218, 219, 224, 0.85);
+  // color:#dee2e6;
+  clear: both;
+  padding: 0.5em 0.5em 0;
+  width: 270px;
+  top: 110px;
+  right: 60px;
+  position: fixed;
+  color: rgb(0, 4, 53);
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #f3f3f3;
+}
+
+::ng-deep .ol-layerswitcher.ol-forceopen.ol-collapsed .ol-switchertopdiv {
+  display: block;
+  background: var(--surface-b);
+}
+
+::ng-deep .ol-layerswitcher.ol-forceopen.ol-collapsed .ol-switcherbottomdiv {
+  display: block;
+  background: var(--surface-b);
+}
+
+::ng-deep .ol-control.ol-layerswitcher > button {
+  pointer-events: auto;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0 0.02rem 0.3rem var(--primary-color),
+    0rem -0.2rem 0.3rem var(--primary-color) inset;
+  transition: box-shadow 0.1s ease-out;
+  background-color: #fff !important;
+  display: grid;
+  border: 2px solid --primary-color;
+  color: black;
+}
+
+:host ::ng-deep .ol-control.ol-layerswitcher {
+  position: absolute;
+  top: 1.1%;
+  right: 3.8%;
+}
+
+:host ::ng-deep .ol-layerswitcher > button::before {
+  background: #e2e4e1;
+  background-color: rgb(226, 228, 225);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  top: 0.1em;
+  left: 0.17em;
+  height: 28px;
+  width: 28px;
+  box-shadow: 0.1em 0.1em #325158;
+}
+
+:host ::ng-deep .ol-layerswitcher > button::after {
+  top: 0.1em;
+  left: 0.17em;
+  height: 28px;
+  width: 28px;
+  background: #83bcc5;
+  background-color: rgb(131, 188, 197);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-image: none;
+  background-image: radial-gradient(
+    circle at 0.85em 0.6em,
+    #70b3be 0,
+    #70b3be 0.65em,
+    #83bcc5 0.65em
+  );
+}
+
+:host ::ng-deep .ol-layerswitcher .panel {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 0.7em;
+  transition: top 0.3s;
+  position: relative;
+  top: 0;
+}
+
+:host ::ng-deep .ol-control button,
+select,
+optgroup,
+textarea {
+  pointer-events: auto;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0 0.02rem 0.3rem var(--primary-color),
+    0rem -0.2rem 0.3rem var(--primary-color) inset;
+  transition: box-shadow 0.1s ease-out;
+  background-color: #fff !important;
+  display: grid;
+}
+
+:host ::ng-deep .pi {
+  font-family: "primeicons";
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 5px;
+}
+
+:host ::ng-deep .p-dialog .p-dialog-header {
+  border-bottom: 0 none;
+  background: var(--surface-b);
+  color: #343a40;
+  padding: 0.5rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: var(--text-color);
+}
+
+:host ::ng-deep .p-dialog {
+  flex-direction: column;
+  pointer-events: auto;
+  max-height: auto;
+  transform: scale(1);
+  position: relative;
+  box-shadow: -0.6rem 1rem 1rem #333;
+  transition: box-shadow 0.1s ease-out;
+  overflow: auto;
+}
+
+:host ::ng-deep .p-dialog-content {
+  height: 70%;
+  overflow: inherit !important;
+  flex-grow: 1;
+}
+
+:host ::ng-deep .fg-2x {
+  font-size: 1em;
+}
+
+:host ::ng-deep .map-option-toolbar button,
+select {
+  position: relative;
+  // top: 2vh;
+  // left: 20px;
+  text-transform: none;
+  display: grid;
+  height: 45px;
+  width: 45px;
+  padding: 10px;
+  margin: 1px;
+  border-radius: 5px;
+  background: var(--surface-b);
+  // color: var(--text-color);
+}
+
+::ng-deep .MapAttributeQueryComponent .p-dialog {
+  top: 50%;
+  left: 0;
+}
+
+.button .icon {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+}
+
+::ng-deep .ol-tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+  font-size: 12px;
+  cursor: default;
+  user-select: none;
+}
+
+::ng-deep .ol-tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+
+::ng-deep .ol-tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+
+::ng-deep .ol-tooltip-measure:before,
+.ol-tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+
+::ng-deep .ol-tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+
+// :host ::ng-deep button, select, optgroup, textarea {
+//   margin: 0;
+//   font-family: inherit;
+//   font-size: large !important;
+//   line-height: inherit;
+// }
+
+:host ::ng-deep .fg-2x {
+  font-size: 1em;
+  top: 0rem;
+  position: absolute;
+}
+
+:host ::ng-deep .ol-layerswitcher.ol-unselectable.ol-control.ol-collapsed {
+  right: 5px;
+}
+
+:host ::ng-deep .ol-dragbox {
+  border: 2px dashed grey;
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+/** scale-bar */
+::ng-deep .ol-scale-bar {
+  background: transparent;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+
+::ng-deep .ol-scale-text {
+  position: absolute;
+  top: -24px;
+  left: 23%;
+}
+
+::ng-deep .ol-scale-bar-inner div:nth-child(7) {
+  position: absolute !important;
+  top: 10px !important;
+}
+
+::ng-deep .ol-scale-bar-inner {
+  display: flex !important;
+}
+
+::ng-deep .ol-scale-bar-inner .ol-scale-singlebar-even {
+  height: 10px !important;
+  background-color: #000000 !important;
+}
+
+::ng-deep .ol-scale-bar-inner .ol-scale-singlebar-odd {
+  height: 10px !important;
+  background-color: #f3f3f3 !important;
+}
+
+/** Overlay Popup */
+:host ::ng-deep .ol-popup {
+  display: none;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+
+.ol-popup:after,
+.ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+
+.ol-popup-closer:after {
+  content: "✖";
+}
+
+.ol-popup-closer:after {
+  content: "✖";
+}
+
+/** ol-context-menu */
+::ng-deep .ol-ctx-menu-container {
+  position: absolute;
+  padding: 8px;
+  background: var(--surface-b);
+  color: #222;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: #0003 3px 3px 5px;
+  box-sizing: border-box;
+}
+
+::ng-deep .ol-overlay-container {
+  position: relative;
+  background-color: rgba(218, 219, 224, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #000000;
+}
+
+::ng-deep p {
+  margin: 5px 5px 5px 5px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+}

@@ -1,0 +1,12 @@
+var olcs3d = new olcs.OLCesium({map:map});
+
+function set3dmode()
+	{
+		olcs3d.setEnabled(true);		
+	}
+		
+	function set2dmode()
+	{
+		olcs3d.setEnabled(false);		
+	}
+	

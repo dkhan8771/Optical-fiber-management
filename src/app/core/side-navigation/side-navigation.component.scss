@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-header > a {
+  padding: 1rem !important;
+}
+
+
+:host ::ng-deep .admin-class .p-panelmenu .p-panelmenu-panel:first-child .p-panelmenu-header > a {
+}
+
+:host ::ng-deep .user-class .p-panelmenu .p-panelmenu-panel:first-child .p-panelmenu-header > a {
+}

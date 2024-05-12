@@ -1,0 +1,128 @@
+{
+  "type": "FeatureCollection",
+  "name": "Optical_Fiber_Management_Delhi",
+  "CableType": "Blue-OFM",
+  "Core": 12,
+  "properties": [
+    {
+      "SerialNo": 1,
+      "color": "rgb(255, 0, 0)",
+      "ip": "192.160.40.41",
+      "From": "A",
+      "to": "B",
+     "TxPower(dBm)": -7,
+      "RxPower(dBm)": -18,
+      "Wavelength(nm)": 1500
+    },
+    {
+      "SerialNo": 2,
+      "color": "rgb(0, 255, 0)",
+      "ip": "192.160.40.42",
+      "From": "A",
+      "to": "C",
+     "TxPower(dBm)": -5,
+      "RxPower(dBm)": -19,
+      "Wavelength(nm)": 1550
+    },
+    {
+      "SerialNo": 3,
+      "color": "rgb(0, 0, 255)",
+      "ip": "192.160.40.43",
+      "From": "A",
+      "to": "D",
+     "TxPower(dBm)": -7,
+      "RxPower(dBm)": -24,
+      "Wavelength(nm)": 1600
+    },
+    {
+      "SerialNo": 4,
+      "color": "rgb(255, 255, 0)",
+      "ip": "192.160.40.44",
+      "From": "A",
+      "to": "E",
+     "TxPower(dBm)": -6,
+      "RxPower(dBm)": -22,
+      "Wavelength(nm)": 1350
+    },
+    {
+      "SerialNo": 5,
+      "color": "rgb(0, 255, 255)",
+      "ip": "192.160.40.45",
+      "From": "A",
+      "to": "F",
+     "TxPower(dBm)": -4,
+      "RxPower(dBm)": -23,
+      "Wavelength(nm)": 1550
+    },
+    {
+      "SerialNo": 6,
+      "color": "rgb(255, 0, 255)",
+      "ip": "192.160.40.46",
+      "From": "A",
+      "to": "G",
+     "TxPower(dBm)": -3,
+      "RxPower(dBm)": -18,
+      "Wavelength(nm)": 1400
+    },
+    {
+      "SerialNo": 7,
+      "color": "rgb(60, 179, 113)",
+      "ip": "192.160.40.47",
+      "From": "A",
+      "to": "H",
+     "TxPower(dBm)": -4,
+      "RxPower(dBm)": -18,
+      "Wavelength(nm)": 1450
+    },
+    {
+      "SerialNo": 8,
+      "color": "rgb(106, 90, 205)",
+      "ip": "192.160.40.48",
+      "From": "A",
+      "to": "I",
+     "TxPower(dBm)": -1,
+      "RxPower(dBm)": -21,
+      "Wavelength(nm)": 1300
+    },
+    {
+      "SerialNo": 9,
+      "color": "rgb(240, 240, 240)",
+      "ip": "192.160.40.49",
+      "From": "A",
+      "to": "J",
+     "TxPower(dBm)": -1,
+      "RxPower(dBm)": -22,
+      "Wavelength(nm)": 1600
+    },
+    {
+      "SerialNo": 10,
+      "color": "rgb(180, 180, 180)",
+      "ip": "192.160.40.50",
+      "From": "A",
+      "to": "K",
+     "TxPower(dBm)": -6,
+      "RxPower(dBm)": -23,
+      "Wavelength(nm)": 1600
+    },
+    {
+      "SerialNo": 11,
+      "color": "rgb(238, 130, 238)",
+      "ip": "192.160.40.51",
+      "From": "A",
+      "to": "L",
+     "TxPower(dBm)": -7,
+      "RxPower(dBm)": -24,
+      "Wavelength(nm)": 1350
+    },
+    {
+      "SerialNo": 12,
+      "color": "rgb(60, 179, 113)",
+      "ip": "192.160.40.52",
+      "From": "A",
+      "to": "M",
+     "TxPower(dBm)": -7,
+      "RxPower(dBm)": -25,
+      "Wavelength(nm)": 1450
+    }
+  ]
+}

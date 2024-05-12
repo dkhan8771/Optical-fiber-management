@@ -1,0 +1,65 @@
+@import "../../../styles.scss";
+
+.main-container {
+  height: 100vh;
+  background-image: url("../../../assets/wallpaper/ofm2.jpg");
+  // background: #03408a;
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-card {
+  position: relative;
+  top: 10vh;
+  margin: auto;
+  margin-right: 72%;
+  width: 20vw;
+  height: fit-content;
+  transform: translate(0%, 20vh);
+  border: 0.5px solid darkgray;
+  border-radius: 5px;
+  .login-inputs {
+    width: 100%;
+    margin: auto;
+    // padding: 0px 2rem;
+    // margin-top: 1vh;
+    // display: inline-block;
+  }
+  .card-label {
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .login-btn {
+    width: fit-content;
+    margin: auto;
+  }
+}
+:host ::ng-deep .p-card {
+  // background: rgba(0, 0, 0, 0.9);
+  background: rgb(1, 1, 1, 0.75);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  box-shadow: 0rem 0.1rem 0.2rem var(--primary-color),
+    0rem -0.1rem 0.5rem var(--primary-color) inset;
+}
+
+:host ::ng-deep .p-password {
+  margin-top: 32px;
+}
+
+:host ::ng-deep .p-button {
+  width: 160px;
+  padding: 0.45rem 0.5rem;
+}
+
+.error-message {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  color: #ff0000;
+}

@@ -1,0 +1,115 @@
+@import "../../../styles.scss";
+
+.main-container {
+  height: 100vh;
+  display: inline-flex;
+  background-color: #fff;
+
+  .side-nav {
+    background-color: $background-light;
+    // box-shadow: 0 0 4px 1px #ffffff, 0 0 4px 1px #033f87, 0 0px 8px 1px #fffdd3;
+    width: 12vw;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    .logo {
+      height: 13vh;
+      padding: .5vh 0vh 0vh 3.5vh;
+      // width: 12vw;
+      margin: auto;
+
+      img {
+        width: 8vw;
+        background: transparent;
+      }
+    }
+
+    .side-nav-items {
+      height: 81vh;
+      overflow-y: auto;
+    }
+  }
+
+  :host
+    .main-container[_ngcontent-gdk-c16]
+    .side-nav[_ngcontent-gdk-c16]
+    .logo[_ngcontent-gdk-c16]
+    img[_ngcontent-gdk-c16] {
+    width: 21vh;
+  }
+
+  .container-right {
+    box-shadow: 0px 0 3px 1px #ffffff, 0px 0 3px 0px #033f87,
+      0px 0px 3px 0px #fffdd3;
+    width: 88vw;
+
+    .top-nav {
+      height: 8vh;
+      // background-color: #033F87;
+      box-shadow: 4px 0 3px 1px #ffffff, 4px 0 3px 0px #033f87,
+        4px 0px 3px 0px #fffdd3;
+    }
+
+    .content {
+      height: 92vh;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    .bottom-nav {
+      height: 6vh;
+      background-color: $background-light;
+      display: grid;
+      // background-color: #033F87;
+      grid-template-columns: 49% 2% 49%;
+      box-shadow: 4px 0 3px 1px #ffffff, 4px 0 3px 0px #033f87,
+        4px 0px 3px 0px #fffdd3;
+
+      p {
+        font-size: 28px;
+        font-weight: 700;
+        // color: #fff;
+      }
+    }
+  }
+}
+
+.side-nav-close {
+  background-color: rgba(255, 255, 255, 0.918);
+  // box-shadow: 0 0 4px 1px #ffffff, 0 0 4px 1px #033f87, 0 0px 8px 1px #fffdd3;
+  width: 0vw !important;
+  height: 100vh;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 1s;
+
+  .side-nav-items {
+    display: none;
+  }
+}
+
+.container-right-full {
+  box-shadow: 0px 0 3px 1px #ffffff, 0px 0 3px 0px #033f87,
+    0px 0px 3px 0px #fffdd3;
+  overflow-x: hidden;
+  width: 100vw !important;
+  transition: 0.5s;
+}
+
+:host {
+  &.primary {
+    background-color: #3333;
+  }
+}
+
+:host ::ng-deep [_nghost-tmt-c15] .p-menubar {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  color: #fff;
+  border: none;
+  background: transparent;
+  left: -20px;
+  position: relative;
+}
